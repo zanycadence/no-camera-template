@@ -254,7 +254,8 @@ public class MainActivity extends AppCompatActivity {
         Bitmap imgTheta = BitmapFactory.decodeFile(photoPath, options);
         ByteBuffer byteBufferTheta = ByteBuffer.allocate(imgTheta.getByteCount());
         imgTheta.copyPixelsToBuffer(byteBufferTheta);
-        Bitmap bmpTheta = Bitmap.createScaledBitmap(imgTheta, 400, 200, true);
+        //Bitmap bmpTheta = Bitmap.createScaledBitmap(imgTheta, 400, 200, true);
+        Bitmap bmpTheta = Bitmap.createScaledBitmap(imgTheta, 800, 400, true);
         return bmpTheta;
     }
 
